@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT Transport 2024 LTD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #FFB711;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: transform 0.3s ease;
+        }
+        header img {
+            max-width: 100px;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: fixed;
+            top: 80px; /* Adjusted this to ensure no gap */
+            left: 0;
+            width: 100%;
+            z-index: 999;
+            transition: transform 0.3s ease;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #FFA500;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 160px; /* Adjusted to match new nav height */
+        }
+        .container h1 {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .container p {
+            text-align: justify;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .btn {
+            background-color: #FFA500;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 2px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e69500;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            opacity: 0.6;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #FFB711;
+            opacity: 0.4;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48px;
+        }
+        .scroll-btn {
+            background-color: #FFA500;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .scroll-btn:hover {
+            background-color: #e69500;
+        }
+        .slide-up {
+            transform: translateY(-100%);
+        }
+		h1
+		{
+			font-size: 30pt
+		}
+		h3
+		{
+			text-align: left;
+			font-family: 'LEMON MILK'
+		}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="logo.png" alt="AT Transport Logo">
+        <h1 style="font-family: 'LEMON MILK', sans-serif;">AT Transport 2024 LTD</h1>
+    </header>
+    <nav id="nav">
+        <a href="#hero">Home</a>
+        <a href="#services">Servizi</a>
+        <a href="#contact">Contatti</a>
+    </nav>
+    <div class="hero" id="hero">
+        <img src="camion.jpg" alt="Scenic View">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h2>Il tuo tour perfetto inizia qui!</h2>
+            <button class="scroll-btn" onclick="document.getElementById('info').scrollIntoView({ behavior: 'smooth' });">Scopri di più</button>
+        </div>
+    </div>
+    <div class="container" id="home">
+        <div class="section" id="info">
+            <h3>Benvenuti ad AT Transport</h3>
+            <p>Offriamo soluzioni di trasporto affidabili e sicure per tutte le vostre esigenze logistiche. La nostra missione è fornire servizi di alta qualità e costruire relazioni durature con i nostri clienti.</p>
+        </div>
+        <div class="section">
+            <h3>Perché Sceglierci</h3>
+            <p>Con anni di esperienza nel settore dei trasporti, garantiamo puntualità, sicurezza e professionalità. Il nostro team è composto da esperti pronti a soddisfare ogni vostra esigenza logistica.</p>
+        </div>
+        <div class="section">
+            <h3>La Nostra Flotta</h3>
+            <p>Disponiamo di una flotta moderna e ben mantenuta che ci permette di gestire trasporti di qualsiasi dimensione e complessità. Ogni veicolo è equipaggiato con le ultime tecnologie per garantire un monitoraggio costante delle spedizioni.</p>
+        </div>
+    </div>
+    <div class="container" id="services">
+        <div class="section">
+            <h3>I nostri servizi</h3>
+            <p>Da trasporti nazionali a internazionali, gestiamo tutto con professionalità ed efficienza. Offriamo una vasta gamma di servizi per soddisfare tutte le vostre esigenze di trasporto e logistica.</p>
+            <ul>
+                <li>Trasporto merci</li>
+                <li>Gestione delle spedizioni</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="section contact-info">
+            <h3>Contatti</h3>
+            <p>Telefono: +39 3452221728</p>
+            <p>Email: <a href="mailto:a.t.transport2024@gmail.com">a.t.transport2024@gmail.com</a></p>
+            <p>Indirizzo: Via dei Trasporti, 123, 00100 Roma, Italia</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 AT Transport 2024 LTD. Tutti i diritti riservati.
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            var nav = document.getElementById('nav');
+            var hero = document.getElementById('hero');
+            var heroHeight = hero.clientHeight;
+            
+            if (window.scrollY > heroHeight) {
+                header.classList.add('slide-up');
+                nav.classList.add('slide-up');
+            } else {
+                header.classList.remove('slide-up');
+                nav.classList.remove('slide-up');
+            }
+        });
+    </script>
+</body>
+</html>
